@@ -22,6 +22,7 @@ export class AuthService {
 
   login(username: string, password: string) {
     let user:User = {name: username, password: password}
+    //users.indexOf(user) //ez valamiért mindig -1, ezért csináltam a lentit
     users.forEach((_user) => {
       if(_user.name==username && _user.password==password) {
         this._loggedUser=user;
