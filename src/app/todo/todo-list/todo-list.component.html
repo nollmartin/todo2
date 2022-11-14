@@ -1,0 +1,14 @@
+<div>
+  <button [routerLink]="['./create']" class="btn-navigate">Add new todo</button>
+  <button (click)="logout()" class="btn-function">Logout</button>
+</div>
+<hr>
+<h1>Running todos</h1>
+<div *ngFor="let todo of getTodos()">
+  <app-todo [todo]="todo"></app-todo>
+</div>
+<hr>
+<h1>Done todos</h1>
+<div *ngFor="let todo of getDoneTodos()">
+  <app-todo [todo]="todo"></app-todo>
+</div>

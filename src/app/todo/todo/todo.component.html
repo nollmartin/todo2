@@ -1,0 +1,4 @@
+<div class="todo">
+  {{todo | todo}}
+  <button class="btn-function" *ngIf="!todo.done" (click)="doneTodo()">Done</button>
+</div>

@@ -1,0 +1,30 @@
+#body {
+  width: 100%;
+  height: 100%;
+  background-color: darkolivegreen;
+  color: #fff;
+  margin: 0px;
+}
+
+.btn-basic {
+  height: 30px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: beige;
+  border-color: black;
+  margin-left: 10px
+}
+
+.btn-function {
+  @extend .btn-basic;
+  &hover {
+    background-color: darkgray;
+  }
+}
+
+.btn-navigate {
+  @extend .btn-basic;
+  &hover {
+    background-color:coral;
+  }
+}

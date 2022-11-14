@@ -1,0 +1,10 @@
+<h2>New todo:</h2>
+<div>
+  Todo name: <input type="text" [(ngModel)]="name"><br><br>
+  Description: <input type="text" [(ngModel)]="description">
+</div>
+<p></p>
+<div>
+  <button (click)="saveTodo()" class="btn-function">Save</button>
+  <button (click)="back()" class="btn-navigate">Cancel</button>
+</div>
